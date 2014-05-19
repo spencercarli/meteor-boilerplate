@@ -40,11 +40,8 @@
       Flatdoc.run({
         fetcher: Flatdoc.github('spencercarli/meteor-boilerplate')
       });
-      $(document).on('flatdoc:loading', function() {
-        console.log('loading');
-      });
-      $(document).on('flatdoc:ready', function() {
-        console.log('ready');
+      Flatdoc.run({
+        fetcher: Flatdoc.github('spencercarli/meteor-boilerplate', 'changelog.md')
       });
     </script>
 
@@ -56,7 +53,7 @@
     <div class="main container">
       <div class="row">
         <div class="col-md-3">
-          <!-- <div role='flatdoc-menu'></div> -->
+          <div role='flatdoc-menu'></div>
           {% include sidebar.html %}
         </div>
         <div class="col-md-9">
