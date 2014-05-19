@@ -68,7 +68,7 @@ server
 
 Includes 4 LESS variables to make responsive design super easy. Each variable (`xs`, `sm`, `md`, `lg`) coincides with [Bootstrap media queries](http://getbootstrap.com/css/#responsive-utilities).
 
-'''scss
+```scss
 
 h1 {
   font-size: 24px;
@@ -78,17 +78,17 @@ h1 {
   }
 }
 
-'''
+```
 
 ## Search Engine Optimization
 
 Search engines rely on `<title>` and `<meta>` tags to read page titles and descriptions. You can specify these for each page in your app by including the following in the corresponding page's `.coffee` file. (Sample included in home.coffee)
 
-'''coffee
+```coffee
 
 Tempate.home.rendered = ->
 
   document.title = "My New Meteor App"
   $("<meta>", { name: "description", content: "Page description for My New Meteor App" }).appendTo "head"
 
-'''
+```
