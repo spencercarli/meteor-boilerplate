@@ -36,20 +36,7 @@
     <script src='http://rstacruz.github.io/flatdoc/v/0.8.1/legacy.js'></script>
     <script src='http://rstacruz.github.io/flatdoc/v/0.8.1/flatdoc.js'></script>
     <!-- Initializer -->
-
-      {% if page.url == "/changelog.html" %}
-        <script>
-          Flatdoc.run({
-            fetcher: Flatdoc.github('spencercarli/meteor-boilerplate', 'changelog.md')
-          });
-        </script>
-      {% else %}
-        <script>
-          Flatdoc.run({
-            fetcher: Flatdoc.github('spencercarli/meteor-boilerplate')
-          });
-        </script>
-      {% endif %}
+    {% include settings.html %}
 
   </head>
   <body role='flatdoc'>
