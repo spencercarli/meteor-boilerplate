@@ -1,10 +1,3 @@
----
-layout: default
-username: Differential
-repo: meteor-boilerplate
-desc: Boilerplate meteorjs app
-
----
 # meteor-boilerplate
 
 A starting point for meteorjs applications, includes Iron Router, Bootstrap 3, Font Awesome, LESS and Coffeescript.
@@ -68,7 +61,7 @@ server
 
 Includes 4 LESS variables to make responsive design super easy. Each variable (`xs`, `sm`, `md`, `lg`) coincides with [Bootstrap media queries](http://getbootstrap.com/css/#responsive-utilities).
 
-```scss
+```SCSS
 
 h1 {
   font-size: 24px;
@@ -84,7 +77,7 @@ h1 {
 
 Search engines rely on `<title>` and `<meta>` tags to read page titles and descriptions. You can specify these for each page in your app by including the following in the corresponding page's `.coffee` file. (Sample included in home.coffee)
 
-```coffee
+```CoffeeScript
 
 Tempate.home.rendered = ->
 
