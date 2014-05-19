@@ -24,13 +24,22 @@
         )
       );
     </script>
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap.css">
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/global.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/global.css">
+
+    <!-- Flatdoc -->
+    <script src='http://rstacruz.github.io/flatdoc/v/0.8.1/flatdoc.js'></script>
+    <!-- Initializer -->
+    <script>
+      Flatdoc.run({
+        fetcher: Flatdoc.github('spencercarli/meteor-boilerplate')
+      });
+    </script>
   </head>
   <body>
 
@@ -39,9 +48,11 @@
     <div class="main container">
       <div class="row">
         <div class="col-md-3">
+          <!-- <div role='flatdoc-menu'></div> -->
           {% include sidebar.html %}
         </div>
         <div class="col-md-9">
+          <!-- <div role='flatdoc-content'></div> -->
           {{ content }}
         </div>
       </div>
