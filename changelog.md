@@ -1,10 +1,3 @@
----
-layout: default
-username: BeDifferential
-repo: meteor-boilerplate
-desc: Boilerplate meteorjs app
-
----
 # Changelog
 
 ### 3/14/14
